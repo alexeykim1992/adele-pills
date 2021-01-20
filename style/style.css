@@ -31,17 +31,18 @@ a:hover {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background: #fafcfc;
 }
 
 .header__panel{
     padding: 0;
-    background: #fafcfc;
     user-select: none;
 }
 
 .header__panel_content {
     padding: 25px 0;
     position: relative;
+    border-bottom: 1px #ebebeb solid;
 }
 
 .header__logo {
@@ -71,7 +72,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    background: #fafcfc;
     width: 100px;
     padding: 10px 15px;
 }
@@ -86,11 +86,15 @@ a:hover {
 }
 
 .header__content{
-    background: cyan;
     flex-grow: 1;
     display: flex;
     align-items: flex-end;
     padding: 50px 0;
+}
+
+.header__content_row{
+    display: flex;
+    justify-content: space-between;
 }
 
 .header__panel{
@@ -100,18 +104,38 @@ a:hover {
     justify-content: center;
 }
 
+.title-pre-line{
+    display: flex;
+}
+
+.header__panel_top:before{
+    content: '';
+    background: var(--blue);
+    color: black;
+    width: 5px;
+    border-radius: 3px;
+    margin-right: 30px;
+}
+
+.header__panel_top{    
+    margin-bottom: 70px;
+}
+
 .header__panel_title{
     font-family: var(--f-raleway-heavy);
     font-size: 72px;
     line-height: 52px;
     color: var(--black);
     text-transform: uppercase;
+    margin-left: -4px;
+    margin-bottom: 27px;
 }
 
 .header__panel_subtitle{
     font-family: var(--f-raleway-extrabold);
     font-size: 24px;
     color: var(--black);
+    margin-bottom: 0;
 }
 
 .header__panel_description{
@@ -119,6 +143,7 @@ a:hover {
     font-size: 16px;
     color: #666666;
     line-height: 25px;
+    margin-bottom: 50px;
 }
 
 .header__panel_controls{
@@ -129,7 +154,7 @@ a:hover {
 .header__panel_order-button{
     font-family: var(--f-lato-bold);
     font-size: 16px;
-    line-height: 11px;
+    line-height: 12px;
     text-transform: uppercase;
     color: #f1f1f1;
     background: var(--blue);
@@ -139,12 +164,13 @@ a:hover {
     width: 180px;
     height: 50px;
     border-radius: 25px;
+    margin-right: 26px;
 }
 
 .header__panel_watch-button{
     font-family: var(--f-lato-bold);
     font-size: 16px;
-    line-height: 11px;
+    line-height: 12px;
     color: var(--black);
     text-transform: uppercase;
     display: flex;
@@ -160,10 +186,14 @@ a:hover {
     color: var(--black);
 }
 
-
 .header__panel_watch-icon{
     color: var(--blue);
     font-size: 18px;
+    margin-left: 9px;
+}
+
+.header__panel_watch-text{
+    margin-bottom: 0;
 }
 
 /* ================= /header ===================== */
