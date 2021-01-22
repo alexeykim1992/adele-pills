@@ -36,7 +36,7 @@ a:hover {
 
 .header__panel{
     padding: 0;
-    user-select: none;
+    /* user-select: none; */
 }
 
 .header__panel_content {
@@ -90,6 +90,8 @@ a:hover {
     display: flex;
     align-items: flex-end;
     padding: 50px 0;
+    overflow: hidden;
+    min-height: 580px;
 }
 
 .header__content_row{
@@ -97,7 +99,7 @@ a:hover {
     justify-content: space-between;
 }
 
-.header__panel{
+.header__left-panel{
     background: none;
     display: flex;
     flex-direction: column;
@@ -108,7 +110,7 @@ a:hover {
     display: flex;
 }
 
-.header__panel_top:before{
+.title-pre-line:before{
     content: '';
     background: var(--blue);
     color: black;
@@ -196,4 +198,80 @@ a:hover {
     margin-bottom: 0;
 }
 
+.header__right-panel{
+    position: relative;
+}
+
+.header__right-panel_bg{
+    position: absolute;
+    left: -40%;
+    top: calc(50% - 95px);
+    z-index: 1;
+}
+
+.header__pic{
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
 /* ================= /header ===================== */
+
+/* ================= main ===================== */
+/* ================= section_numbers ===================== */
+.main__numbers{
+    background: linear-gradient(to right, #21172b, #0f0816);
+    padding: 120px 0;
+    margin-top: 125px;
+    margin-bottom: 120px;
+}
+
+.numbers__bottle{
+    position: relative;
+}
+
+.numbers__bottle_pic{
+    position: absolute;
+    right: -30%;
+    top: -215%;
+}
+
+.numbers__card_top::before{
+    margin-right: 25px;
+}
+
+.numbers__card_top{
+    font-family: var(--f-lato-black);
+    font-size: 72px;
+    color: white;
+    line-height: 55px;    
+    margin-bottom: 24px;
+}
+
+.numbers__card_title{
+    font-family: var(--f-lato-bold);
+    font-size: 16px;
+    color: var(--blue);
+    line-height: 11px;
+    margin-bottom: 13px;
+    text-transform: uppercase;
+}
+
+.numbers__card_subtitle{
+    font-family: var(--f-lato-light);
+    font-size: 16px;
+    color: #a9a9a9;
+    line-height: 11px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+.numbers__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: calc(100% / 12);
+}
+/* ================= /section_numbers ===================== */
+
+/* ================= /main ===================== */
