@@ -4,6 +4,7 @@
     text-decoration: none;
     list-style-type: none;
     box-sizing: border-box;
+    /* outline: 1px black solid; */
 }
 
 :root {
@@ -387,5 +388,89 @@ a:hover {
     margin-bottom: 80px;
 }
 /* ================= /section_features ===================== */
+
+/* ================= section_results ===================== */
+.main__results{
+    background: rgb(126, 126, 228);
+    /* background: white; */
+}
+
+.results__page{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.results__page_before{
+    transform: translateX(110px);
+    position: relative;
+    z-index: 1;
+}
+
+.results__arrow{
+    /* position: static; */
+    font-size: 30px;
+    width: 65px;
+    height: 65px;
+    top: calc(50% - 32px);
+    border-radius: 50%;
+    color: #c6cfd2;
+    border: 3px #c6cfd2 solid;
+}
+
+.results__arrow:hover,
+.results__arrow:focus{    
+    color: #c6cfd2;
+}
+
+.carousel-indicators .main__results_dots{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #d8e4e8;
+}
+
+.carousel-indicators .main__results_dots.active{
+    background: var(--blue);    
+}
+
+.results__page_measures{
+    display: flex;
+}
+
+.results__page_info_bold{
+    font-family: var(--f-lato-bold);
+    font-size: 40px; 
+    line-height: 30px;   
+}
+
+.results__page_info_top{
+    font-family: var(--f-lato-light);
+    font-size: 16px;
+    color: var(--black);
+    margin-bottom: 0;
+}
+
+.results__page_info_title{
+    font-family: var(--f-lato-light);
+    font-size: 16px;
+    color: var(--blue);
+    margin-bottom: 0;
+    line-height: 12px;
+}
+
+.results__page_person{
+
+}
+
+.results__page_person-name{
+    margin-bottom: 0;
+}
+
+.results__page_person-age{
+    margin-bottom: 0;
+}
+/* ================= /section_results ===================== */
 
 /* ================= /main ===================== */
