@@ -390,16 +390,16 @@ a:hover {
 /* ================= /section_features ===================== */
 
 /* ================= section_results ===================== */
-.main__results{
-    background: rgb(126, 126, 228);
-    /* background: white; */
+.main__results{    
+    background: white;
+    padding: 120px 0;
 }
 
-.results__page{
-    height: 500px;
+.results__page{    
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 70px;
 }
 
 .results__page_before{
@@ -417,6 +417,15 @@ a:hover {
     border-radius: 50%;
     color: #c6cfd2;
     border: 3px #c6cfd2 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.results__arrow_panel{
+    background: white;
+    opacity: 1;
+    margin: 0;
 }
 
 .results__arrow:hover,
@@ -424,19 +433,33 @@ a:hover {
     color: #c6cfd2;
 }
 
-.carousel-indicators .main__results_dots{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #d8e4e8;
+.main__results_dots-panel{
+    margin: 0 auto;
+    width: 80px;
+    justify-content: space-between;
 }
 
-.carousel-indicators .main__results_dots.active{
+.main__results_dots-panel .main__results_dots{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;    
+    background: #d8e4e8;
+    border: none;
+    transition: none;
+    opacity: 1;
+}
+
+.main__results_dots-panel .main__results_dots.active{
     background: var(--blue);    
 }
 
 .results__page_measures{
     display: flex;
+    margin-bottom: 50px;
+}
+
+.results__page_info-card{
+    margin-right: 30px;
 }
 
 .results__page_info_bold{
@@ -460,17 +483,29 @@ a:hover {
     line-height: 12px;
 }
 
-.results__page_person{
-
+.results__page_info .title-pre-line::before{
+    margin-right: 20px;
 }
 
+
 .results__page_person-name{
-    margin-bottom: 0;
+    font-family: var(--f-raleway-bold);
+    font-size: 16px;
+    color: black;
+    line-height: 14px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
 }
 
 .results__page_person-age{
+    font-family: var(--f-lato-light);
+    font-size: 16px;    
+    color: black;
+    line-height: 12px;
     margin-bottom: 0;
 }
+
+
 /* ================= /section_results ===================== */
 
 /* ================= /main ===================== */
