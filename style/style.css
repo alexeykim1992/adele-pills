@@ -724,7 +724,7 @@ a:hover {
     text-transform: uppercase;
 }
 
-.ingredients_download-button_info{
+.ingredients_download-button_info {
     font-family: var(--f-lato-light);
     font-size: 16px;
     line-height: 12px;
@@ -733,5 +733,36 @@ a:hover {
 }
 
 /* ================ /section_facts =================== */
+/* ================ section_certifications =================== */
+.main__certifications {
+    background: #f1f4f5;
+    padding: 80px 0;
+}
+
+.certifications__title_bold {
+    text-align: center;
+}
+
+.certifications__header_description {
+    margin-bottom: 50px;
+}
+
+.certifications__content {
+    display: flex;
+    justify-content: center;
+}
+
+.certifications__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.certifications__box:nth-of-type(n+2) {
+    border-left: 1px#e0e0e0 solid;
+}
+
+/* ================ /section_certifications =================== */
 
 /* ================= /main ===================== */
