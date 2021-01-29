@@ -34,7 +34,7 @@ a:hover {
 .header {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     background: var(--bg-color)
 }
 
@@ -766,7 +766,7 @@ a:hover {
 
 /* ================ section_supplement =================== */
 .main__supplement{
-    padding-top: 120px;
+    padding: 120px 0 150px;
 }
 
 .supplement__left_panel{
@@ -834,5 +834,67 @@ a:hover {
     border-radius: 25px;
 }
 /* ================ /section_supplement =================== */
+/* ================ section_subscribe =================== */
+.main__subscribe{
+    background: url(../images/subscribe_bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0 85px;
+}
+
+.subscribe__header_description{
+    margin-bottom: 35px;
+}
+
+.subscribe__title_bold,
+.subscribe__title_thin{
+    color: #e5e5e5;
+}
+
+.subscribe__form_background{
+    padding: 35px 30px;
+    background: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.subscribe__form{
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    height: 50px;
+    width: fit-content;
+}
+
+.subscribe__form_field{
+    font-family: var(--f-lato-light);
+    font-size: 16px;
+    color: var(--black);
+    line-height: 12px;
+    width: 405px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+}
+
+.subscribe__form_button{    
+    font-family: var(--f-lato-bold);
+    font-size: 16px;
+    line-height: 12px;
+    color: white;
+    text-transform: uppercase;
+    background: var(--blue);
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    border-left: 1px #5cbee7 solid;
+    margin-left: -4px;
+}
+
+.subscribe__form_field::placeholder{
+    color: #e5e5e5;    
+}
+/* ================ /section_subscribe =================== */
 
 /* ================= /main ===================== */
