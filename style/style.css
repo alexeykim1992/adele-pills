@@ -39,8 +39,7 @@ a:hover {
 }
 
 .header__panel {
-    padding: 0;
-    /* user-select: none; */
+    padding: 0;    
 }
 
 .header__panel_content {
@@ -485,7 +484,8 @@ a:hover {
     font-family: var(--f-lato-light);
     font-size: 16px;
     color: var(--black);
-    margin-bottom: 0;
+    line-height: 0px;
+    margin-bottom: 28px;
 }
 
 .results__page_info_title {
@@ -782,7 +782,7 @@ a:hover {
 
 .supplement__photo{
     position: absolute;
-    right: 0;
+    right: 15px;
     top: 0;
 }
 
