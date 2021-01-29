@@ -870,7 +870,6 @@ a:hover {
 .subscribe__form_field{
     font-family: var(--f-lato-light);
     font-size: 16px;
-    color: var(--black);
     line-height: 12px;
     width: 405px;
     padding-left: 30px;
@@ -896,5 +895,56 @@ a:hover {
     color: #e5e5e5;    
 }
 /* ================ /section_subscribe =================== */
+/* ================ section_inquire =================== */
+.main__inquire{
+    padding: 120px 0;
+}
+
+.inquire__form{
+    margin: 0 auto;    
+}
+
+.box{
+    background: black;
+}
+
+.inquire__form_field,
+.inquire__form_text{
+    font-family: var(--f-lato-light);
+    font-size: 16px;
+    line-height: 12px;
+    padding: 15px 0;
+    border: none;
+    border-bottom: 1px #ebebeb solid;    
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.inquire__form_field::placeholder,
+.inquire__form_text::placeholder{
+    color: #ababab;
+}
+
+.inquire__form_text{
+    height: 100px;
+    margin-bottom: 50px;
+    resize: none;
+}
+
+.inquire__form_button{
+    font-family: var(--f-lato-bold);
+    font-size: 16px;
+    line-height: 12px;
+    color: #f1f1f1;
+    background: var(--blue);
+    padding: 20px 90px;
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ================ /section_inquire =================== */
 
 /* ================= /main ===================== */
